@@ -1,0 +1,12 @@
+version: "3.1"
+
+rules:
+  - rule: Get all user allergies
+    steps:
+      - intent: intent_get_all_user_allergies
+      - action: action_get_all_user_allergies
+
+  - rule: Check if user has given allergy
+    steps:
+      - intent: intent_check_if_user_has_given_allergy
+      - action: action_check_if_user_has_given_allergy

@@ -1,0 +1,66 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - intent_get_user_details
+  - intent_get_all_user_allergies
+  - intent_check_if_user_has_given_allergy
+  - intent_get_all_user_appointments
+  - intent_get_user_basic_health_details
+  - intent_get_all_user_bills
+  - intent_get_all_user_doctor_notes
+  - intent_get_all_user_emergency_contacts
+  - intent_get_all_user_prescriptions
+  - intent_get_all_user_vaccinations
+  - intent_call_all_user_emergency_contacts
+  - intent_get_all_nearby_amenities
+  - intent_get_all_health_news
+
+actions:
+  - action_get_user_details
+  - action_get_all_user_allergies
+  - action_check_if_user_has_given_allergy
+  - action_get_all_user_appointments
+  - action_get_user_basic_health_details
+  - action_get_all_user_bills
+  - action_get_all_user_doctor_notes
+  - action_get_all_user_emergency_contacts
+  - action_get_all_user_prescriptions
+  - action_get_all_user_vaccinations
+  - action_call_all_user_emergency_contacts
+  - action_get_all_nearby_amenities
+  - action_get_all_health_news
+
+entities:
+  - allergy
+  - amenity
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
